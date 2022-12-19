@@ -1,0 +1,75 @@
+﻿<html lang="ru-RU">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8 задание</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script defer src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
+            integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="Script1.js" defer></script>
+</head>
+<body style="height: 100vh; background-color: lightcyan;">
+    <header style="padding: 1em;">
+        <div style="margin: auto;">
+            <div style="margin: auto; display: flex; text-align:center;">
+                
+                <h1 style="font-weight: 600; margin-top: 250px; margin-left: auto; margin-right: auto;">8 Задание </h1>
+            </div>
+        </div>
+    </header>
+    <main class="m-auto row col-10 col-md-8 p-0 g-0">
+     
+        <button type="button" class="btn btn-success col-10 col-md-8  fs-1" data-bs-toggle="modal" data-bs-target="#formModal" style="background-color: darkblue; width: 300px; margin-top: 0px; margin-left: auto; margin-right: auto;">
+            <div style="color:snow">Открыть</div>
+        </button>
+
+        <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="background-color:aquamarine;">
+            <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
+                <div class="modal-content" style="background-color:papayawhip">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Форма</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex p-0">
+                        <form autocomplete="off" id="contactForm" class="m-auto row p-5 g-4">
+
+                            <div class="col-md-6">
+                                <label for="formName" class="form-label">Имя</label>
+                                <input name="name" id="formName" class="form-control" required placeholder="Введите имя">
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="formEmail" class="form-label">Email</label>
+                                <input name="email" id="formEmail" class="form-control" required type="email" placeholder="Введите почту">
+                            </div>
+
+                            <div class="col-12">
+                                <label for="formMessage" class="form-label">Сообщение</label>
+                                <textarea id="formMessage" class="form-control" name="message" required placeholder="Введите сообщение"></textarea>
+                            </div>
+
+                            <div class="col-12 d-flex">
+                                <div class="form-check m-auto">
+                                    <label class="form-check-label" for="policyCheckBox">Согласие</label>
+                                    <input class="form-check-input" type="checkbox" id="policyCheckBox" required name="policyCheckBox">
+                                </div>
+                            </div>
+                            <div class="col-12 d-flex">
+                                <input type="submit" id="submitBtn" class="btn btn-success m-auto" value="Отправить">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="py-5">
+        <div class="d-flex m-auto flex-column">
+        </div>
+    </footer>
+</body>
+</html>
